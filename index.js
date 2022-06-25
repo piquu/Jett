@@ -34,7 +34,7 @@ client.on('guildMemberAdd', (member) => {
   if (!member.guild.id == config.guildId) return;
   member.guild.channels.cache
     .get('989998664669888612')
-    .send(`A wild <@${member.user.id}> appears!`);
+    .send(`A wild ${member.user.username} appears!`);
   member.send(
     `Hey ${member.user.username}\ndont forget to read <#989998737986314261>`
   );
